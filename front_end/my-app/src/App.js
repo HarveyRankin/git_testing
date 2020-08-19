@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
   console.log('testing the commit');
+  const testing = "testing"
   return (
     <div className="App">
      
