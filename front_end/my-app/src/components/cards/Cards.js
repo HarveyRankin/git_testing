@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TinderCard from "react-tinder-card";
 import "./Cards.css";
-
+import db from "../../firebase";
 
 
 const TinderCards = () => {
@@ -13,7 +13,9 @@ const TinderCards = () => {
         name:'Mark Zuckerberg',
         url:'https://cdn.cnn.com/cnnnext/dam/assets/200109164024-01-mark-zuckerberg-1023-file-super-tease.jpg'
     }]);
-
+    useEffect(()=>{
+        
+    },[])
     return(
         <div>
             <div className="cards__container">
