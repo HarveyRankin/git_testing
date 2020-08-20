@@ -4,5 +4,29 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+.buttonsContainer .MuiIconButton-root{
+    background-color: white;
+    box-shadow: -2px 2px 15px -3px rgba(0,0,0,0.49);
+}
 
+.replay{
+    color:rgb(245, 169, 28);
+    padding: 2vh;
+}
+.close{
+    color: red;
+    padding: 2vh;
+}
+.star{
+    color: blue;
+    padding: 2vh;
+}
+.favorite{
+    color: green;
+    padding: 2vh;
+}
+.flash{
+    color: purple;
+    padding: 2vh;
 }
