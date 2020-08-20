@@ -1,10 +1,18 @@
 import React from 'react';
 import './App.css';
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <div className="App">
-     
+     {/*header*/}
+     <Header/>
+     {/*Tinder cards*/}
+     {/*buttons below tinder cards*/}
+
+
+     {/* chat screen (route)*/}
+     {/* individual chat screen*/}
     </div>
   );
 }
