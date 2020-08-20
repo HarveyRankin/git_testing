@@ -6,15 +6,13 @@ import db from "../../firebase";
 
 const TinderCards = () => {
     
-    const [people,setPeople] = useState([{
-        name:"Steve Jobs",
-        url:'https://wallsdesk.com/wp-content/uploads/2016/11/Steve-Jobs-High-Quality-Wallpapers.jpg'
-    },{
-        name:'Mark Zuckerberg',
-        url:'https://cdn.cnn.com/cnnnext/dam/assets/200109164024-01-mark-zuckerberg-1023-file-super-tease.jpg'
-    }]);
+    const [people,setPeople] = useState([]);
     useEffect(()=>{
-        
+        db.collection('people').onSnapshot(snap => {
+            //going to set all in people array 
+            //on snapshot is alwyas listening
+            setPeople(snap.docs.map( doc => doc.data()))
+        })
     },[])
     return(
         <div>

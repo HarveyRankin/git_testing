@@ -1,4 +1,4 @@
-
+import firebase from "firebase"
 const firebaseConfig = {
     apiKey: "AIzaSyDmr84Vt6-zOkCXwEAqU7c0XFGw1C35adE",
     authDomain: "fake-tinder-53802.firebaseapp.com",
