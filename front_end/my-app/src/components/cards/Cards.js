@@ -5,15 +5,19 @@ import db from "../../firebase";
 
 
 const TinderCards = () => {
-    
     const [people,setPeople] = useState([]);
+    
     useEffect(()=>{
-        db.collection('people').onSnapshot(snap => {
+        const unsubscribe = db.collection('people').onSnapshot(snap => {
             //going to set all in people array 
             //on snapshot is alwyas listening
             setPeople(snap.docs.map( doc => doc.data()))
         })
-    },[])
+        return () => { //remove the listener 
+            unsubscribe();
+        }
+    },[people]);
+
     return(
         <div>
             <div className="cards__container">
