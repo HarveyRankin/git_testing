@@ -3,8 +3,8 @@
     justify-content: space-between;
     padding: 2%;
     border-bottom: 1px solid #f9f9f9;
-}
-.header__logo{
-    height: 40px;
-    object-fit: contain;
+    align-items: center;
+};
+.header__icon{
+    padding: 20px;
 }
