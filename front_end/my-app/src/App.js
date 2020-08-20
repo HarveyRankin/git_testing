@@ -1,18 +1,31 @@
 import React from 'react';
 import './App.css';
 import Header from "./components/header/Header";
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom"; 
+
 
 function App() {
   return (
     <div className="App">
+
+      <Router>
      {/*header*/}
-     <Header/>
-     {/*Tinder cards*/}
-     {/*buttons below tinder cards*/}
+     <Switch>
+     <Route path="/chat">
+      <h1>
+        I am the chat page
+      </h1>
+    </Route>
+    <Route path="/">
+  <Header/>
+    </Route>
+    
+     </Switch>
+    
+  
 
+      </Router>
 
-     {/* chat screen (route)*/}
-     {/* individual chat screen*/}
     </div>
   );
 }
@@ -32,3 +45,9 @@ export default App;
     measurementId: "G-6S89YFEV2G"
   };
 */
+   {/*Tinder cards*/}
+     {/*buttons below tinder cards*/}
+
+
+     {/* chat screen (route)*/}
+     {/* individual chat screen*/}
